@@ -1,0 +1,18 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat';
+    text-align: justify;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+#proj-title{
+    text-align: center;
+}
+
+.chap-num, .chap-title{
+    text-align: right;
+}

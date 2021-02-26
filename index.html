@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fourth Assignment</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="row">
+          <div class="two columns">
+              &NonBreakingSpace;
+          </div>
+          <div class="eight columns">
+              <h1 id="proj-title">Real Time Instance Segmentation</h1>
+              <h3>Abstract</h3>
+              <p>Computer vision technology has been widely applied to augment sports
+                TV broadcast experience. Some of these broadcasts require accurate foreground segmentation on the outdoor sports scene, i.e., segmentation of potential sports players and highlight them. Segmentation on a full-HD video
+                (1080p) resolution video stream with a high frame rate leads big challenge
+                on the segmentation model. In this project, a deep learning-based framework is proposed for real-time instance segmentation.</p>
+              <p>For instance, segmentation in the specific outdoor sport like golf, the framework shows an excellent performance both in speed and accuracy according to the experiments, and it’s superior to the state-of-the-art model. Moreover, it is proved that it can be used in real-time (30 FPS) broadcast TV
+                with GPU acceleration. For non-specific scenes of the benchmark COCO
+                dataset, its performance does not exceed the current state-of-the-art with
+                respect to accuracy, but still has advantages regarding speed.
+                </p>
+          </div>
+          <div class="two columns">
+              &nbsp;
+          </div>
+      </div> 
+      <div class="row">
+        <div class="two columns">
+            &NonBreakingSpace;
+        </div>
+        <div class="eight columns">
+            <h1 class="chap-num">Chapter 1</h1>
+            <h2 class="chap-title">Introduction</h2>
+            <h3>Introduction</h3>
+            <p>For instance, segmentation in the specific outdoor sport like golf, the framework shows an excellent performance both in speed and accuracy according to the experiments, and it’s superior to the state-of-the-art model. Moreover, it is proved that it can be used in real-time (30 FPS) broadcast TV
+                with GPU acceleration. For non-specific scenes of the benchmark COCO
+                dataset, its performance does not exceed the current state-of-the-art with
+                respect to accuracy, but still has advantages regarding speed.
+                </p>
+            <p>Instance segmentation is a combination of three classic image detection
+                tasks, classification, localization, and segmentation. In this thesis, the concept can be specified by two terms: (a) object detection, which contains
+                classification and object localization; (b) semantic segmentation that generates a precision mask of the object. Each of the techniques is previously
+                well studied.</p>
+            <h3>Background</h3>
+            <p>Many modern automation technology requires multi-sensor inputs for correct operations. Computer vision is one of the most import parts, and it has
+                been applied in several areas, including autonomous driving, surveillance,
+                and watching experience enhancement on broadcast TV. The thesis focuses
+                on still camera vision for watching experience enhancement, precisely instance segmentation on sports TV broadcast streams.
+                In some specific outdoor sports scenes, like golf, the audience’s watch experience could be enhanced by marking or highlighting the potential players and also their equipment. For instance, the golfer and their golf-club
+                and golf-bag could be marked by precise masks covering them in a golf
+                game</p>
+            <img src="https://cdn.glitch.com/039f2acb-69fe-473f-83cd-39d9d4ed9234%2Fmasks-image.PNG?v=1614304253988">
+            <h3>Challenges</h3>
+            <p>However, the main challenges for this task are segmentation accuracy and
+                speed. Current instance segmentation methods can be divided into two
+                parts. The first category is, one-stage object detection model for example
+                YOLO [1][2][3] and Single Shot Detector (SSD) [4] combined with a computer vision segmentation algorithm like MOG2 [5] and KNN [6] background subtraction. These kinds of algorithms run at high speed, but they
+                generate bad quality masks and are sometimes unstable and will be affected by some scene changes such as illumination changes and similar
+                environment color changes. The second kinds of models are fully deep
+                learning-based models that consist of a two-stage object detection network
+                and semantic segmentation network. The main drawback of these kinds of
+                deep neural network (DNN) frameworks like Mask R-CNN [7] is that they
+                are only capable of running at a meager frame rate, 5-10 FPS, which is not
+                enough for broadcast usage.</p>
+            <h3>Existing Solutions/Competitors</h3>
+            <p>We dont have any competitors. This idea is unique and there is not any market software which is doing this thing.</p>
+            <h3>Proposed Solutions</h3>
+            <p>The project will focus on finding and developing an instance segmentation
+                for a specific outdoor sports scene, golf, that has a difference with the relevant research field to a certain extent. The proposed model is tested on
+                (1) public dataset COCO which is a standard dataset that measures the accuracy performance of the model. (2) The host company-owned dataset
+                contains golf scenes only. The proposed model has some generalization to
+                some extent, but its performance is only maximized on the specific dataset
+                for product usage. Also, speed performance is also taken into a significant
+                consideration, which will have a concession on accuracy performance.</p>
+          </div>
+        <div class="two columns">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">
+          &nbsp;
+        </div>
+        <div class="eight columns">
+          <h1 class="chap-num">Chapter 2</h1>
+          <h2 class="chap-title">Technologies</h2>
+          <h3>Operating Environment</h3>
+          <p>The software will operate with the following software components and applications:
+            The software being developed will be tested to run finelly on ubuntu 20.0.4 LTS with latest GPU Drivers for graphics card. 
+            </p>
+          <h3>Design and implementation constraints</h3>
+          <p>
+            <ul>
+              <li>Memory: At least 16 GB RAM of PC is required to operate the application.</li>
+              <li>Broadcast Channel Card.</li>
+            </ul>
+          </p>
+          <h3>Assumptions & Dependencies</h3>
+          <p>It is assumed that the hardware designed will work correctly with the third-party Linux based operating system.</p>
+          <h3>Software Interfaces</h3>
+          <p>
+            <ul>
+              <li>Python</li>
+              <li>Numpy Arrays</li>
+              <li>Tensorflow</li>
+              <li>YOLOv3 Model for Object Segmentation</li>
+              <li>JavaScript for front-end</li>
+            </ul>
+          </p>
+          </div>
+  </body>
+</html>
